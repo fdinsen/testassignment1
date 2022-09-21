@@ -25,14 +25,16 @@
 
 ## 3. Thoughts on BDD
 ### 1. What was positive and good about BDD?
-Because of the way new features are developed, you naturally end up with a library of regression tests, which helps make sure that any changes don't break existing functionality. Additionally it helps atomise functionality, because it is necessary for testing to be possible.
+Because of the way new features are developed, you naturally end up with a library of regression tests, which helps make sure that any changes don't break existing functionality. Additionally it helps atomise functionality, because it is necessary for testing to be possible. In theory, it should also help with communication with a client, since the client will have acceptance tests that they can themselves verify are fulfilled, but that wasn't a positive I felt in this assignment. 
 ### 2. What was annoying or difficult?
-Working in a very type-strict language makes BDD and TDD a lot more annoying. In loosely typed languages the compiler doesn't get in the way in the same way:
+Working with BDD in a scope as small as this feels artificially formal. The result was that the acceptance tests were identical to the unit tests, which means I wasn't actually doing BDD but just TDD. For BDD to have any effect, a system more complex than a single function is required. 
+
+Additionally, Working in a very type-strict language makes BDD and TDD a lot more annoying. In loosely typed languages the compiler doesn't get in the way in the same way:
 When writing the temperature converter I initially wrote the test to provide an integer and expect an integer returned. However, in my second test, the result contained a decimal, which meant I had to rewrite my function AND my first test to use floating point numbers instead. A loosely typed language would've just converted the floats to ints in the first test, meaning I wouldn't have had to rewrite it. 
 On the other hand, having to be strict about my use of types also means that there are less possible errors I'll have to test for. I know exactly what type I expect and return, it is up to the user to convert their numbers to floats correctly. I therefore don't have to test for that conversion.
 ### 3. What surprised you?
-I was surprised at how helpful BDD is surrounding problem solving. It forces one to break problems down in small bits. This doesn't exactly work for mathematical functions that are just implementations of formulas, since these don't lend themselves to an iterative approach. 
+I was surprised at how helpful TDD is surrounding problem solving. It forces one to break problems down in small bits. However, this doesn't work well for mathematical functions that are just an implementation of a formula, since these don't lend themselves to an iterative approach. 
 ### 4. Did BDD help you understand the problem domain more?
-Aboslutely. As I mentioned, it helped break the problem down into bits that could be implemented separately. However, it also resulted in a sub-optimal solution, so in the future I should spend more time on the refactoring step.
+BDD didn't, but TDD did. As I mentioned, it helped break the problem down into bits that could be implemented separately. However, it also resulted in a sub-optimal solution, so in the future I should spend more time on the refactoring step.
 ### 5.  Did BDD help you write some tests you wouldn’t otherwise have thought of? 
 Not really, no. I think that's partly the fault of the narrow domain of inputs and outputs of the given Katas, and partly the fault of the fact that I used a very type-strict language, which meant I didn't have to handle a lot of potential errors related to loose typing.
