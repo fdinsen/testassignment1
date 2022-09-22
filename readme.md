@@ -1,3 +1,11 @@
+To run unit tests, navigate to folder of either of the projects and run:
+```
+cargo test --test unittests
+```
+and to run acceptance tests, run:
+```
+cargo test --test acceptancetests
+```
 # Assignment 1
 
 ## 1. Reflections
