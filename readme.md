@@ -3,6 +3,7 @@
 Repository for Test Assignment 1, using BDD for two Katas.
 Solutions to Katas are found in /temperature-converter and /numeral-converter.
 Solutions are developed in Rust.
+
 Gherkin .feature files are found in /features folder inside either project.
 Tests are found in /tests folder of either project, and kata solutions in /src folder.
 
