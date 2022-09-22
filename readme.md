@@ -16,6 +16,8 @@ and to run acceptance tests, run:
 cargo test --test acceptancetests
 ```
 
+Images of test results can be found at the bottom of this readme.
+
 # Assignment 1
 
 ## 1. Reflections
