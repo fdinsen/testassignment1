@@ -1,3 +1,9 @@
+# Readme
+
+Repository for Test Assignment 1, using BDD for two Katas.
+Solutions to Katas are found in /temperature-converter and /numeral-converter.
+Solutions are developed in Rust.
+
 To run unit tests, navigate to folder of either of the projects and run:
 ```
 cargo test --test unittests
@@ -6,6 +12,20 @@ and to run acceptance tests, run:
 ```
 cargo test --test acceptancetests
 ```
+## Unit Test Results:
+### Temperature Converter
+![temperature converter unit test results](./unit-test-results1.png)
+
+### Numeral Converter
+![numeral converter unit test results](./unit-test-results2.png)
+
+## Acceptance Test Results
+### Temperature Converter
+![temperature converter acceptance test results](./acceptance-test-results1.png)
+
+### Numeral Converter
+![numeral converter acceptance test results](./acceptance-test-results2.png)
+
 # Assignment 1
 
 ## 1. Reflections
