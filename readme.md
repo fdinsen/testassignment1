@@ -3,6 +3,8 @@
 Repository for Test Assignment 1, using BDD for two Katas.
 Solutions to Katas are found in /temperature-converter and /numeral-converter.
 Solutions are developed in Rust.
+Gherkin .feature files are found in /features folder inside either project.
+Tests are found in /tests folder of either project, and kata solutions in /src folder.
 
 To run unit tests, navigate to folder of either of the projects and run:
 ```
@@ -12,19 +14,6 @@ and to run acceptance tests, run:
 ```
 cargo test --test acceptancetests
 ```
-## Unit Test Results:
-### Temperature Converter
-![temperature converter unit test results](./unit-test-results1.png)
-
-### Numeral Converter
-![numeral converter unit test results](./unit-test-results2.png)
-
-## Acceptance Test Results
-### Temperature Converter
-![temperature converter acceptance test results](./acceptance-test-results1.png)
-
-### Numeral Converter
-![numeral converter acceptance test results](./acceptance-test-results2.png)
 
 # Assignment 1
 
@@ -66,3 +55,18 @@ I was surprised at how helpful TDD is surrounding problem solving. It forces one
 BDD didn't, but TDD did. As I mentioned, it helped break the problem down into bits that could be implemented separately. However, it also resulted in a sub-optimal solution, so in the future I should spend more time on the refactoring step.
 ### 5.  Did BDD help you write some tests you wouldn’t otherwise have thought of? 
 Not really, no. I think that's partly the fault of the narrow domain of inputs and outputs of the given Katas, and partly the fault of the fact that I used a very type-strict language, which meant I didn't have to handle a lot of potential errors related to loose typing.
+
+# Test Results
+## Unit Test Results:
+### Temperature Converter
+![temperature converter unit test results](./unit-test-results1.png)
+
+### Numeral Converter
+![numeral converter unit test results](./unit-test-results2.png)
+
+## Acceptance Test Results
+### Temperature Converter
+![temperature converter acceptance test results](./acceptance-test-results1.png)
+
+### Numeral Converter
+![numeral converter acceptance test results](./acceptance-test-results2.png)
